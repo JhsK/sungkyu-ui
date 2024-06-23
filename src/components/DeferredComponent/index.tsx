@@ -4,7 +4,6 @@ interface IDeferredComponentProps {
   children: ReactNode;
   minWidth: string;
   minHeight: string;
-  //   style?: CSSProp;
 }
 
 function DeferredComponent({
