@@ -5,12 +5,12 @@ type Dispatch<SetStateAction> = (value: SetStateAction) => void;
 export type FlagStateType = [number, Dispatch<SetStateAction<number>>];
 
 export interface IDefaultModalProps {
-  resolve: (value: unknown) => void;
-  reject: (reason: unknown) => void;
+  handleCloseModal: () => void;
 }
 
 export interface IModalInfo extends IDefaultModalProps {
   key: string;
   Component: React.FC<any>;
   props: any;
+  handleClickOutSideCallback?: () => void;
 }
