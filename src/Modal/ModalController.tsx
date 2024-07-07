@@ -4,7 +4,7 @@ import { FlagStateType, IModalInfo } from "./types";
 
 export default class ModalController {
   private flagState;
-  private modalInfos: IModalInfo[] = [];
+  modalInfos: IModalInfo[] = [];
   private canOutsideClick: boolean;
 
   constructor(flagState: FlagStateType) {
